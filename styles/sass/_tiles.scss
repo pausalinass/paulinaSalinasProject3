@@ -1,0 +1,25 @@
+#memoryBoard{
+    background-color: $thrid;
+    width:420px;
+    height:320px;
+    padding:24px;
+    margin:2% auto;
+    // perspective: 1000px;
+    div{
+        border:3px solid black;
+        width:70px;
+        height: 70px;
+        padding:20px;
+        margin:10px;
+        cursor: pointer;
+        text-align: center;
+    }
+}
+
+.box{
+    float:left;
+    width: 100px;
+    height: 100px;
+    margin: 20px;
+    text-align: center;
+}

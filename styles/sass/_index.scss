@@ -1,0 +1,55 @@
+body{
+    background-color: $secondary;
+    font-family: 'Karla';
+}
+
+.container{
+    @include flexCenter ();
+    flex-direction: column;
+}
+
+h1{
+    @include textStyle ();
+    color: $secondary;
+    font-size:56px;
+    font-weight: 700;
+    text-shadow:  0 2px 2px #dd9866, -1px -2px 0px #dd9866, -2px 5px 1px #F6BF51, -4px 8px 0px #F3A712, -6px 11px 0px #DC2E3C, -8px 14px 0px #DB2B39, -10px 17px 0px #8f384d, -12px 20px 0px #46579B, -14px 23px 0px #29335C;
+}
+
+h2{
+    @include textStyle ();
+    font-weight: 400;
+}
+
+.buttonContainer{
+    @include flexCenter ();
+    button{
+    background-color: $primary;
+    border:none;
+    color: $secondary;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin:4px 2px;
+    text-transform: uppercase;
+    &:hover{
+        background-color: $fourt;
+        color:$secondary;
+    }
+    &:active{
+        background-color: $fourt;
+        color:$secondary;
+    }
+    &:focus{
+        background-color: $fourt;
+        color:$secondary;
+    }
+}
+}
+
+footer{
+    background-color: $primary;
+    text-align: center;
+    padding: 23px;
+}
