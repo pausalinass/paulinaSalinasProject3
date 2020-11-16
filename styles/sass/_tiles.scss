@@ -1,25 +1,97 @@
-#memoryBoard{
-    background-color: $thrid;
-    width:420px;
-    height:320px;
-    padding:24px;
-    margin:2% auto;
-    // perspective: 1000px;
-    div{
-        border:3px solid black;
-        width:70px;
-        height: 70px;
-        padding:20px;
-        margin:10px;
-        cursor: pointer;
-        text-align: center;
-    }
+.memoryBoard{
+    background-color: purple;
+    width: 100px;
+    height: 400px;
 }
-
-.box{
-    float:left;
+.board {
     width: 100px;
     height: 100px;
-    margin: 20px;
-    text-align: center;
+    margin: 40px 0;
+    perspective: 600px;
+    display:flex;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 100%;
+    height: 100%;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+    cursor: pointer;
+    position: relative;
+}
+
+.card.is-flipped {
+    transform: rotateY(180deg);
+}
+
+.card__face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    color: black;
+    backface-visibility: hidden;
+}
+
+.card__face--front {
+    @include tileStyle(url(file:///Users/paulinasalinas/Desktop/juno/fallBootcampTvShow/season4/paulinaSalinasProject3/styles/sass/tiles/nounTile.png));
+}
+
+.card__face--back {
+    @include tileStyle(url(file:///Users/paulinasalinas/Desktop/juno/fallBootcampTvShow/season4/paulinaSalinasProject3/styles/sass/tiles/nounCake.png));
+    transform: rotateY(180deg);
+}
+
+.card1 {
+    width: 100%;
+    height: 100%;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+    cursor: pointer;
+    position: relative;
+}
+
+.card1.is-flipped {
+    transform: rotateY(180deg);
+}
+
+.card__face--back1 {
+    @include tileStyle(url(file:///Users/paulinasalinas/Desktop/juno/fallBootcampTvShow/season4/paulinaSalinasProject3/styles/sass/tiles/nounCupcake.png));
+    transform: rotateY(180deg);
+}
+
+.card2 {
+    width: 100%;
+    height: 100%;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+    cursor: pointer;
+    position: relative;
+}
+
+.card2.is-flipped {
+    transform: rotateY(180deg);
+}
+
+.card__face--back2 {
+    @include tileStyle(url(file:///Users/paulinasalinas/Desktop/juno/fallBootcampTvShow/season4/paulinaSalinasProject3/styles/sass/tiles/nounCandy.png));
+    transform: rotateY(180deg);
+}
+
+.card3 {
+    width: 100%;
+    height: 100%;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+    cursor: pointer;
+    position: relative;
+}
+
+.card3.is-flipped {
+    transform: rotateY(180deg);
+}
+
+.card__face--back3 {
+    @include tileStyle(url(file:///Users/paulinasalinas/Desktop/juno/fallBootcampTvShow/season4/paulinaSalinasProject3/styles/sass/tiles/nounChocolateBar.png));
+    transform: rotateY(180deg);
 }
