@@ -335,22 +335,25 @@ footer {
 }
 
 .memoryBoard {
-  background-color: purple;
-  width: 100px;
-  height: 400px;
-}
-
-.board {
-  width: 100px;
-  height: 100px;
-  margin: 40px 0;
-  -webkit-perspective: 600px;
-          perspective: 600px;
+  background-color: #46579B;
+  width: 400px;
+  height: 300px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.place {
+  width: 100px;
+  height: 100px;
+  -webkit-perspective: 600px;
+          perspective: 600px;
 }
 
 .card {
@@ -386,83 +389,6 @@ footer {
 }
 
 .card__face--back {
-  background-image: url(file:///Users/paulinasalinas/Desktop/juno/fallBootcampTvShow/season4/paulinaSalinasProject3/styles/sass/tiles/nounCake.png);
-  background-size: cover;
-  -webkit-transform: rotateY(180deg);
-          transform: rotateY(180deg);
-}
-
-.card1 {
-  width: 100%;
-  height: 100%;
-  -webkit-transition: -webkit-transform 1s;
-  transition: -webkit-transform 1s;
-  transition: transform 1s;
-  transition: transform 1s, -webkit-transform 1s;
-  -webkit-transform-style: preserve-3d;
-          transform-style: preserve-3d;
-  cursor: pointer;
-  position: relative;
-}
-
-.card1.is-flipped {
-  -webkit-transform: rotateY(180deg);
-          transform: rotateY(180deg);
-}
-
-.card__face--back1 {
-  background-image: url(file:///Users/paulinasalinas/Desktop/juno/fallBootcampTvShow/season4/paulinaSalinasProject3/styles/sass/tiles/nounCupcake.png);
-  background-size: cover;
-  -webkit-transform: rotateY(180deg);
-          transform: rotateY(180deg);
-}
-
-.card2 {
-  width: 100%;
-  height: 100%;
-  -webkit-transition: -webkit-transform 1s;
-  transition: -webkit-transform 1s;
-  transition: transform 1s;
-  transition: transform 1s, -webkit-transform 1s;
-  -webkit-transform-style: preserve-3d;
-          transform-style: preserve-3d;
-  cursor: pointer;
-  position: relative;
-}
-
-.card2.is-flipped {
-  -webkit-transform: rotateY(180deg);
-          transform: rotateY(180deg);
-}
-
-.card__face--back2 {
-  background-image: url(file:///Users/paulinasalinas/Desktop/juno/fallBootcampTvShow/season4/paulinaSalinasProject3/styles/sass/tiles/nounCandy.png);
-  background-size: cover;
-  -webkit-transform: rotateY(180deg);
-          transform: rotateY(180deg);
-}
-
-.card3 {
-  width: 100%;
-  height: 100%;
-  -webkit-transition: -webkit-transform 1s;
-  transition: -webkit-transform 1s;
-  transition: transform 1s;
-  transition: transform 1s, -webkit-transform 1s;
-  -webkit-transform-style: preserve-3d;
-          transform-style: preserve-3d;
-  cursor: pointer;
-  position: relative;
-}
-
-.card3.is-flipped {
-  -webkit-transform: rotateY(180deg);
-          transform: rotateY(180deg);
-}
-
-.card__face--back3 {
-  background-image: url(file:///Users/paulinasalinas/Desktop/juno/fallBootcampTvShow/season4/paulinaSalinasProject3/styles/sass/tiles/nounChocolateBar.png);
-  background-size: cover;
   -webkit-transform: rotateY(180deg);
           transform: rotateY(180deg);
 }

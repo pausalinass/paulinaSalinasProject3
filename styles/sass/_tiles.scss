@@ -1,15 +1,15 @@
 .memoryBoard{
-    background-color: purple;
-    width: 100px;
-    height: 400px;
-}
-.board {
-    width: 100px;
-    height: 100px;
-    margin: 40px 0;
-    perspective: 600px;
+    background-color: $primary;
+    width: 400px;
+    height: 300px;
     display:flex;
     flex-wrap: wrap;
+    flex-direction: column;
+}
+.place {
+    width: 100px;
+    height: 100px;
+    perspective: 600px;
 }
 
 .card {
@@ -38,60 +38,5 @@
 }
 
 .card__face--back {
-    @include tileStyle(url(file:///Users/paulinasalinas/Desktop/juno/fallBootcampTvShow/season4/paulinaSalinasProject3/styles/sass/tiles/nounCake.png));
-    transform: rotateY(180deg);
-}
-
-.card1 {
-    width: 100%;
-    height: 100%;
-    transition: transform 1s;
-    transform-style: preserve-3d;
-    cursor: pointer;
-    position: relative;
-}
-
-.card1.is-flipped {
-    transform: rotateY(180deg);
-}
-
-.card__face--back1 {
-    @include tileStyle(url(file:///Users/paulinasalinas/Desktop/juno/fallBootcampTvShow/season4/paulinaSalinasProject3/styles/sass/tiles/nounCupcake.png));
-    transform: rotateY(180deg);
-}
-
-.card2 {
-    width: 100%;
-    height: 100%;
-    transition: transform 1s;
-    transform-style: preserve-3d;
-    cursor: pointer;
-    position: relative;
-}
-
-.card2.is-flipped {
-    transform: rotateY(180deg);
-}
-
-.card__face--back2 {
-    @include tileStyle(url(file:///Users/paulinasalinas/Desktop/juno/fallBootcampTvShow/season4/paulinaSalinasProject3/styles/sass/tiles/nounCandy.png));
-    transform: rotateY(180deg);
-}
-
-.card3 {
-    width: 100%;
-    height: 100%;
-    transition: transform 1s;
-    transform-style: preserve-3d;
-    cursor: pointer;
-    position: relative;
-}
-
-.card3.is-flipped {
-    transform: rotateY(180deg);
-}
-
-.card__face--back3 {
-    @include tileStyle(url(file:///Users/paulinasalinas/Desktop/juno/fallBootcampTvShow/season4/paulinaSalinasProject3/styles/sass/tiles/nounChocolateBar.png));
     transform: rotateY(180deg);
 }
